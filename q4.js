@@ -1,18 +1,14 @@
-function Student(name,grade){
-    this.name=name;
-    this.grade=grade;
-    this.study=function(){
-        return this.name+" is studying very hard";
-    };
-    this.getGrade=function(){
-        return this.name+" got "+this.grade;
-    }
+// : Write a function fetchDataWithCallback that simulates fetching
+// data from an API with a delay. Implement error handling in the callback,
+// where the callback can receive either a successful response or an error
+// message. Test the function by simulating both success and failure scenarios.
 
+function Apisimulate(){
+    console.log("Fetching data ....");
+    setTimeout(()=>{
+        if (success){
+            let data="Data Fetched successfully";
+            callback();
+        }
+    })
 }
-
-let st1=new Student("deva",90);
-let st2=new Student("siva",80);
-
-console.log(st1.study());
-
-console.log(st2.getGrade());

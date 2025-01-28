@@ -1,26 +1,26 @@
-                                           // Question :1
-console.log(a);
-var a=10;
-console.log(a);
-a=30;
-console.log(a);
+// Write a function greet that takes a name and a callback function.
+// The function should return a greeting message by calling the callback with
+// the message.
 
 
-//console.log(b);
-let b=20;
-console.log(b);
-b=40;
-console.log(b)
-
-//console.log(c);
-const c=50;
-//c=60;
-console.log(c);
+function greet (name , callback){
+    let msg= "Hello "+name;
+    callback(msg);
+}
+// Printmsg is the call back function
+function printmsg(mesg){
+    console.log(mesg)
+}
+ greet ("abhi",printmsg);
 
 
 
+//  function calc (num,callback){
+//      num=num*num;
+//     callback (num);
+//  }
+//  function plus2(num){
+//     console.log(num+2);
+//  }
 
-var a=10;
-var name="deva"
-var istrue=true;
-console.log(a+" "+name+" "+istrue);
+//  calc(5,plus2);
